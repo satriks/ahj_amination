@@ -1,0 +1,32 @@
+
+body {
+  color: #520909d1;
+}
+.hidden {
+  display: none;
+}
+
+.collapser{
+  padding-top: 50px;
+  width: 500px;
+  margin: auto;
+}
+
+.collapse__btn{
+  background-color: lightblue;
+  margin-bottom: 15px;
+}
+.collapse__content{
+  height: 1px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.collapse__content-active{
+  /* height: 100px; */
+  transition: 2s;
+  border: 1px solid lightblue;
+  padding: 20px;
+}
+
+ 
