@@ -28,7 +28,6 @@ body {
 }
 
 .collapse__content-active{
-  /* height: 100px; */
   transition: 2s;
   border: 1px solid lightblue;
   padding: 20px;
@@ -112,4 +111,110 @@ body {
   margin-right: 10px;
   margin-top: 5px;
 }
- 
+.likes{
+  position: relative;
+}
+
+.like__Btn{
+  width: 150px;
+  background-color: red;
+  border-radius: 20px;
+  color: #fff;
+
+}
+
+.heart {
+  position: absolute;
+
+  height: 25px;
+  width: 25px;
+
+  background-image: url('../pic/heart.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+
+  transform: translate(-50%, -50%);
+  animation-duration: 500ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+
+.heart-1 {
+  animation-name: heart-1;
+}
+
+.heart-2 {
+  animation-name: heart-2;
+}
+
+.heart-3 {
+  animation-name: heart-3;
+}
+
+.heart-4 {
+  animation-name: heart-4;
+}
+
+@keyframes heart-1 {
+  25% {
+    transform: translate(calc(-50% - 50px), -50px);
+  }
+  50% {
+    transform: translate(-50%, -100px);
+  }
+  75% {
+    transform: translate(calc(-50% + 50px), -150px);
+  }
+  100% {
+    transform: translate(-50%, -200px);
+    opacity: 0;
+  }
+}
+@keyframes heart-2 {
+  25% {
+    transform: translate(-50%, -50px);
+  }
+  50% {
+    transform: translate(calc(-50% + 50px), -100px);
+  }
+  75% {
+    transform: translate(calc(-50% - 50px), -150px);
+  }
+  100% {
+    transform: translate(-50%, -200px);
+    opacity: 0;
+  }
+}
+@keyframes heart-3 {
+  25% {
+    transform: translate(-50%, -50px);
+  }
+  50% {
+    transform: translate(calc(-50% - 50px), -100px);
+  }
+  75% {
+    transform: translate(calc(-50% + 50px), -150px);
+  }
+  100% {
+    transform: translate(-50%, -200px);
+    opacity: 0;
+  }
+}
+@keyframes heart-4 {
+  25% {
+    transform: translate(calc(-50% + 50px), -50px);
+  }
+  50% {
+    transform: translate(-50%, -100px);
+  }
+  75% {
+    transform: translate(calc(-50% - 50px), -150px);
+  }
+  100% {
+    transform: translate(-50%, -200px);
+    opacity: 0;
+  }
+}
